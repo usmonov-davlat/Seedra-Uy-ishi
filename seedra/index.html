@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEEDRA</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+  <!--================ Navbar starts ================-->
+  <nav class="navbar  h-[72px] shadow-md fixed top-0  z-[100] w-full bg-white">
+    <div class="container h-full flex items-center justify-between md:px-0 px-2">
+      <a href="#">
+        <img src="./assets/logo.svg" alt="logo">
+      </a>
+
+      <ul class="md:flex hidden  items-center gap-[1rem]">
+        <li class="lg:ml-[2rem] ml-[1rem]"><a class="nav-link" href="#products">ALL PRODUCTS</a></li>
+        <li><a href="#about" class="nav-link">ABOUT SEEDRA</a></li>
+        <li><a href="#blog" class="nav-link">OUR BLOG</a></li>
+        <li><a href="#contacts" class="nav-link">CONTACTS</a></li>
+        <li class="flex  items-center ml-[1rem]">
+          <a href="#">
+            <img src="./assets//facebook.svg" alt="facebook">
+          </a>
+          <a href="#">
+            <img src="./assets/instagramm.svg" alt="instagramm">
+          </a>
+        </li>
+
+        <li class="flex items-center border h-[48px] px-[1rem] rounded-[71px] border-1 border-[#EFEFEF] search-panel">
+          <img src="./assets/icon_search.svg" alt="search">
+          <input class="outline-none border-none nav-link" type="text" placeholder="Search...">
+        </li>
+
+      </ul>
+
+      <div class="flex items-center md:gap-3 gap-[1.4rem] cursor-pointer ml-2">
+        <img class="border border-1 border-[#EFEFEF] p-2 rounded-full" src="./assets/heart.svg" alt="heart">
+        <img class="border border-1 border-[#EFEFEF] p-2 rounded-full" src="./assets/cart.svg" alt="cart">
+        <img id="menu-btn" src="./assets/menu.svg"
+          class="md:hidden inline border border-1 border-[#EFEFEF] p-2 rounded-full" alt="menu">
+      </div>
+
+    </div>
+  </nav>
+  <!--================ Navbar ends================ -->
+
+
+  <!-- Mobile Nav stars -->
+  <nav id="mobile-navbar"
+    class="fixed z-[3] top-[72px] right-[-100%] mobile-navbar h-[calc(100vh-72px)]  w-full backdrop-blur-sm bg-white/20 transition-all duration-300">
+    <div class="mobile-navbar-content  flex flex-col gap-[2rem] p-[1rem] h-full w-[280px] ml-auto bg-white ">
+      <div class="flex items-center border h-[48px] px-[1rem] rounded-[71px] border-1 border-[#EFEFEF]">
+        <img src="./assets/icon_search.svg" alt="search">
+        <input class="w-full outline-none border-none" type="text" placeholder="Search...">
+      </div>
+
+
+      <ul class="flex flex-col my-[1rem]">
+        <li class="py-3 px-4 rounded-[20px] hover:bg-slate-200/50 transition-all duration-200 ">
+          <a class="nav-link" href="#products">ALL
+            PRODUCTS</a>
+        </li>
+        <li class="py-3 px-4 rounded-[20px] hover:bg-slate-200/50 transition-all duration-200 ">
+          <a href="#about" class="nav-link">ABOUT SEEDRA</a>
+        </li>
+        <li class="py-3 px-4 rounded-[20px] hover:bg-slate-200/50 transition-all duration-200 ">
+          <a href="#blog" class="nav-link">OUR BLOG</a>
+        </li>
+        <li class="py-3 px-4 rounded-[20px] hover:bg-slate-200/50 transition-all duration-200 ">
+          <a href="#contacts" class="nav-link">CONTACTS</a>
+        </li>
+
+        <li class="w-full h-[1px] bg-[#EFEFEF] my-3"></li>
+      </ul>
+
+
+      <div class="mt-auto">
+        <div class="w-full h-[1px] bg-[#EFEFEF] my-3"></div>
+
+        <div class="flex gap-[1rem] items-center ">
+          <a href="#">
+            <img src="./assets//facebook.svg" alt="facebook">
+          </a>
+          <a href="#">
+            <img src="./assets/instagramm.svg" alt="instagramm">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Mobile Nav ends -->
+
+
+
+  <!-- Section 1 starts -->
+  <section class="">
+    <div class="mt-[8rem] w-[447px]  h-full  section1">
+      <div class="flex  justify-between items-center">
+        <img class="w-[24px] h-[24px]" src="./assets/Icon Frame.png" alt="">
+        <h1 class="font-[600] text-[36px] leading-[54px] text-[#1F2533] ">Payment info</h1>
+        <div class="carousel-indicators flex gap-2 py-4 justify-center items-center">
+          <div class="w-[35px] h-[6px] rounded-[30px] bg-[#359740] cursor-pointer hover:opacity-100"></div>
+
+          <div class="w-[35px] h-[6px] rounded-[30px] bg-[#359740] cursor-pointer opacity-30  hover:opacity-100"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col mt-[3rem] gap-4">
+        <p class="font-[400] text-[24px] leading-[25px] text-[#70737C]">Card type</p>
+        <div class="flex justify-between items-center">
+          <img src="./assets/ApplePay.png" alt="">
+          <img src="./assets/Visa.png" alt="">
+          <img src="./assets/MasterCard.png" alt="">
+          <img src="./assets/PayPal.png" alt="">
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 mt-8">
+        <p class="font-[400] text-[24px] leading-[25px] text-[#70737C]">Card number</p>
+        <input class="w-full h-[56px]" type="text" placeholder="0000 0000 0000 0000">
+      </div>
+
+      <div class="flex items-center gap-4 mt-8">
+        <div>
+          <p class="font-[400] text-[14px] leading-[25px] text-[#70737C]">Expiring date</p>
+          <input class="font-[300] text-[16px] leading-[28px] text-[#70737C] h-[56px]" type="text" placeholder="01/01">
+        </div>
+
+        <div>
+          <p class="font-[400] text-[14px] leading-[25px] text-[#70737C]">CCV</p>
+          <input class="font-[300] text-[16px] leading-[28px] text-[#70737C] h-[56px]" type="text" placeholder="123">
+        </div>
+      </div>
+      <div class="border border-1 bg-[#EFEFEF] w-full my-8"></div>
+
+      <div class="flex items-center justify-between mt-8">
+        <p class="font-[400] text-[14px] leading-[25px] text-[#70737C]">Total amount</p>
+        <h1 class="font-[500] text-[18px] leading-[25px] text-[#1F2533]">$12.56</h1>
+      </div>
+
+      <div class="flex items-center justify-between bg-[#359740] w-full h-[51px] p-4 rounded-[8px] mt-4">
+        <p class="font-[500] text-[16px] leading-[28px] text-[#FFFFFF]">$12.56</p>
+        <p class="font-[500] text-[16px] leading-[28px] text-[#FFFFFF]">Continue</p>
+      </div>
+    </div>
+  </section>
+  <!-- Section 1 ends -->  
+
+  <!-- ///////////Footer starts/////////// -->
+  <footer class="min-h-[172px] mt-4 bg-[#BDBDBD40] p-[3rem]">
+    <div class="container h-full text-[#70737C] flex flex-col gap-8">
+
+      <div
+        class="foter flex lg:gap-[3rem] flex-wrap md:justify-between justify-center md:gap-[2rem] gap-[1rem] items-center">
+        <h1 class="hover:text-[#359740] cursor-pointer">ALL PRODUCTS</h1>
+        <div class="w-[1px] h-[20px] bg-[#70737C]"></div>
+        <h1 class="text-[#70737C] hover:text-[#359740] cursor-pointer">ABOUT SEEDRA</h1>
+        <div class="w-[1px] h-[20px] bg-[#70737C] "></div>
+        <h1 class="text-[#70737C] hover:text-[#359740] cursor-pointer">OUR BLOG</h1>
+        <img class="md:order-0 order-[-1]" src="./assets/logo.svg" alt="">
+        <h1 class="text-[#70737C] hover:text-[#359740] cursor-pointer">Terms&Conditions</h1>
+        <div class="w-[1px] h-[20px] bg-[#70737C]"></div>
+        <h1 class="text-[#70737C] hover:text-[#359740] cursor-pointer">Privacy Policy</h1>
+      </div>
+
+      <div class="w-full h-[1px] bg-[#359740] opacity-30"></div>
+
+      <div class="flex gap-[1rem] justify-between">
+        <div class="flex items-center gap-[1rem]">
+          <img class="w-[24px] h-[24px]" src="./assets/instagramm.svg" alt="">
+          <img class="w-[24px] h-[24px]" src="./assets/facebook.svg" alt="">
+        </div>
+
+        <h1 class="text-[#70737C]">All rights reserved</h1>
+      </div>
+
+
+
+
+    </div>
+  </footer>
+  <!-- ///////////Footer ends/////////// -->
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
